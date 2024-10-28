@@ -1,9 +1,13 @@
 footer{
   width: 85%;
   margin: 0 auto 50px;
-  background: $grey1;
+  background: rgb(232, 232, 232);
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 800px) {
+    display: block;
+    padding: 5px;
+  }
   form{
     width: 85%;
     margin: 50px auto;
@@ -20,7 +24,7 @@ footer{
     }
     input[type=text],
     textarea{
-      border: 1px solid $grey3;
+      border: 1px solid rgb(209, 209, 209);
       background: transparent;
       padding: 10px;
       outline: none;
@@ -36,8 +40,8 @@ footer{
       resize: none;
     }
     input[type=submit]{
-      color: grey;
-      border-color: grey;
+      color: $grey3;
+      border-color: rgb(209, 209, 209);
       display: flex;
       align-items: flex-start;
       &:hover{
@@ -49,11 +53,16 @@ footer{
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     &>div{
-      border-left: 1px solid grey;
-      border-bottom: 1px solid grey;
+      border-left: 1px solid rgb(209, 209, 209);
+      border-bottom: 1px solid rgb(209, 209, 209);
       display: grid;
       grid-template-columns: 30% 70%;
       align-items: center;
+      &:first-child{
+        @media screen and (max-width: 800px) {
+          border-top: 1px solid rgb(209, 209, 209);;
+        }
+      }
       h3{
         align-self: center ;
         font-size: .7rem;
@@ -77,10 +86,14 @@ footer{
           align-items: center;
           width: 35px;
           height: 35px;
-          border: 1px solid grey;
+          border: 1px solid rgb(209, 209, 209);
           border-radius: 150px;
           margin: 5px;
           cursor: pointer;
+          transition: .3s ease;
+          &:hover{
+            border-color: $black1;
+          }
           i{
             font-size: .9rem;
           }

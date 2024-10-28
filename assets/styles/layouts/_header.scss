@@ -13,11 +13,21 @@ header{
       color: $white1;
       text-transform: uppercase;
       letter-spacing: 6px;
+      @media screen and (max-width: 1000px) {
+        font-size: 3rem;
+      }
+      @media screen and (max-width: 570px) {
+        font-size: 2rem;
+      }
     }
     p {
       margin: 40px 0 60px;
       font-style: italic;
       color: $white1;
+      @media screen and (max-width: 1000px) {
+        width: 85%;
+        margin: 40px auto 60px;
+      }
     }
     span{
       display: flex;
@@ -59,6 +69,12 @@ header{
       display: flex;
       justify-content: center;
       align-items: center;
+      @media screen and (max-width: 815px) {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
       li{
         display: flex;
         justify-content: center;
@@ -75,6 +91,9 @@ header{
         &:hover{
           background: $grey2;
           color: $black1;
+        } 
+        @media screen and (max-width: 700px) {
+          font-size: .6rem;
         }
       }
     }
@@ -84,6 +103,9 @@ header{
       justify-content: space-around;
       width: 25%;
       font-size: 1.1rem;
+      @media screen and (max-width: 815px) {
+        display: none;
+      }
       i{
         cursor: pointer;
         font-weight: 400;
