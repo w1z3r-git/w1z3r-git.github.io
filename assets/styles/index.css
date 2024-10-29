@@ -140,6 +140,10 @@ header nav .nav-left {
       -ms-flex-align: center;
           align-items: center;
 }
+header nav .nav-left:hover li:not(:hover) {
+  background: none;
+  color: rgb(243, 243, 243);
+}
 @media screen and (max-width: 815px) {
   header nav .nav-left {
     height: 100%;
@@ -163,6 +167,9 @@ header nav .nav-left li {
   font-size: 0.7rem;
   letter-spacing: 2px;
   padding: 0 15px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 header nav .nav-left li:first-child {
   background: rgb(233, 233, 233);

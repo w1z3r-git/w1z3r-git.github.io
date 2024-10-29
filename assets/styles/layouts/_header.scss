@@ -66,6 +66,10 @@ header{
     color: $white1;
     animation: animNavbar 2s forwards ease;
     .nav-left{
+      &:hover li:not(:hover){
+        background: none;
+        color: $white1;
+      }
       display: flex;
       justify-content: center;
       align-items: center;
@@ -84,6 +88,8 @@ header{
         font-size: .7rem;
         letter-spacing: 2px;
         padding: 0 15px;
+        cursor: pointer;
+        transition: .3s ease;
         &:first-child{
           background: $grey2;
           color: $black1;
