@@ -1,0 +1,119 @@
+.reservation{
+  color: $white1;
+  max-width: 1100px;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  @media screen and (max-width: 1085px){
+    display: block;
+  }
+  .part-time{
+    padding: 25px;
+    background: $black;
+    .time-container{
+      border: 1px dashed $white1;
+      padding-bottom: 20px;
+      h3{
+        @include title;
+        font-size: 2.5rem;
+        margin-top: 20px;
+      }
+      h4{
+        text-transform: uppercase;
+        font-family: $font2;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        margin-top: -20px;
+      }
+      img{
+        height: 25px;
+        margin-top: 30px;
+      }
+      h5{
+        color: $title;
+        text-transform: uppercase;
+        font-family: $font2;
+        font-size: .9rem;
+        letter-spacing: 2px;
+        margin: 30px 0 15px;
+      }
+      p{
+        font-size: .8rem;
+        font-family: $font3;
+        font-weight: 100;
+      }
+    }
+  }
+  .part-reservation{
+    background: $white1;
+    @include centerChild;
+    .reservation-container{
+      @media screen and (max-width: 1085px){
+        width: 80%;
+        margin: 50px auto;
+      }
+      h2{
+        font-size: 2rem;
+        @include title;
+      }
+      h3{
+        text-transform: uppercase;
+        color: $black;
+        font-family: $font2;
+        margin-top: -12px;
+        font-size: 1.4rem;
+      }
+      img{
+        height: 25px;
+        margin: 25px 0;
+      }
+      .form-input{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        @media screen and (max-width: 850px){
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(6, 1fr);
+          width: 100%;
+          margin: 0 auto;
+        }
+        select,input{
+          margin: 10px;
+          padding: 10px;
+          outline: none;
+          border: none;
+          background: none;
+          border-bottom: 1px solid $grey2;
+          font-family: $font2;
+          color: $grey1;
+          transition: .3s ease;
+          &:focus{
+            border-bottom: 1px solid $title;
+            color: $title;
+          }
+        }
+      }
+      button{
+        background: $grey1;
+        color: $white1;
+        outline: none;
+        border: 1px solid $grey1;
+        text-transform: uppercase;
+        font-family: $font2;
+        letter-spacing: 2px;
+        padding: 15px 35px;
+        border-radius: 25px;
+        margin: 40px 0 0;
+        cursor: pointer;
+        transition: .3s ease;
+        &:hover{
+          transform: scale(1.02);
+          background: transparent;
+          color: $title;
+          border-color: $title;
+        }
+      }
+    }
+  }
+}

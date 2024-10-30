@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,131 +10,315 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./assets/style/index.css" />
     <link
       rel="shortcut icon"
-      href="./assets/img/mountains-removebg-preview.png"
+      href="./assets/img/favicon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./assets/styles/index.css" />
-    <title>La Montagne</title>
+    <title>Resto</title>
   </head>
   <body>
     <header>
-      <div class="header-container">
-        <h1>
-          La montagne <br />
-          ça vous gagne
-        </h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
-          aspernatur deleniti repudiandae iure esse quam?
-        </p>
-        <span>
-          <a href="#main">
-            <i class="fa-solid fa-arrow-down"></i>
-          </a>
-        </span>
-      </div>
       <nav>
-        <ul class="nav-left">
-          <li>this is massively</li>
-          <li>generic page</li>
-          <li>elements reference</li>
+        <div class="logo">
+          <h3>Resto</h3>
+        </div>
+        <!-- Mettre des ancres dans les différents niveau du site -->
+        <ul class="navbar">
+          <li>Home</li>
+          <li>Reservation</li>
+          <li>Menu</li>
+          <li>Blog</li>
+          <li>Pages</li>
+          <li>Shop</li>
+          <li>Contact</li>
         </ul>
-        <ul class="nav-right">
-          <i class="fa-brands fa-x-twitter"></i>
+        <div class="icon">
           <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-x-twitter"></i>
           <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-github"></i>
-        </ul>
+        </div>
       </nav>
+      <div class="header-text">
+        <div>
+          <h2>Welcome to</h2>
+          <h1>The Resto</h1>
+          <img src="./assets/img/ic-plate-big.png" alt="icone-plate" />
+          <p>We serve only the freshest ingredients !</p>
+        </div>
+      </div>
     </header>
-    <main id="main">
-      <div class="section1">
-        <span>April 25, 2017</span>
-        <h2>
-          And this is a <br />
-          massive headline
-        </h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-          debitis quisquam, ipsa voluptate amet voluptatum dolores numquam
-          impedit illo sequi asperiores deleniti beatae? Illum, voluptatibus?
-        </p>
-        <img src="./assets/img/pic01.jpg" alt="Image montrant des montagnes" />
-        <button class="btn">full story</button>
-      </div>
-      <div class="section2">
-        <div class="left-part">
-          <span>April 24, 2017</span>
-          <h3>
-            sed magna <br />
-            ipsum faucibus
-          </h3>
-          <img
-            src="./assets/img/pic02.jpg"
-            alt="Image montrant une forêt en montagne"
-          />
+    <section class="store">
+      <div class="part-bio">
+        <div class="store-container">
+          <h2>Discover</h2>
+          <h3>Our Store</h3>
+          <img src="./assets/img/ic-plate.png" alt="icone-plate" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nihil
-            fuga quia voluptate laudantium dignissimos incidunt praesentium
-            ipsam officiis laborum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nisi
+            quas aliquam a laudantium earum provident et eaque ab, accusamus
+            aperiam mollitia, asperiores minima assumenda tempora? Quibusdam,
+            quaerat ullam eos vel iste, odio soluta.
           </p>
-          <button class="btn">full story</button>
-        </div>
-        <div class="right-part">
-          <span>April 22, 2017</span>
-          <h3>
-            primis eget <br />
-            imperdiet lorem
-          </h3>
           <img
-            src="./assets/img/pic03.jpg"
-            alt="Image montrant la pointe d'une montagne"
+            id="profile"
+            src="./assets/img/avatar-01.jpg"
+            alt="Icone du chef restaurant Russel Stephens"
           />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nihil
-            fuga quia voluptate laudantium dignissimos incidunt praesentium
-            ipsam officiis laborum.
-          </p>
-          <button class="btn">full story</button>
+          <h4>Russell Stephens</h4>
+          <h5>Chef Cook</h5>
         </div>
       </div>
-    </main>
+      <div class="img-container"></div>
+    </section>
+
+    <section class="menu">
+      <h2>Discover</h2>
+      <img src="./assets/img/ic-plate.png" alt="icone-plate" />
+      <ul>
+        <li>Breaksfast</li>
+        <li>Lunch</li>
+        <li>Dinner</li>
+        <li>Drinks</li>
+        <li>Other</li>
+      </ul>
+      <div class="menu-container">
+        <div class="meals">
+          <img src="./assets/img/dish-item-01.jpg" alt="meal-1" />
+          <div class="meals-text">
+            <h3>italian source mushroom</h3>
+            <p>Mushroom / Garlic / Veggies</p>
+          </div>
+          <p>$12</p>
+        </div>
+
+        <div class="meals">
+          <img src="./assets/img/dish-item-02.jpg" alt="meal-2" />
+          <div class="meals-text">
+            <h3>Fried potatoes with garlic</h3>
+            <p>Potatoes / Olive Oil / Garlic</p>
+          </div>
+          <p>$22</p>
+        </div>
+
+        <div class="meals">
+          <img src="./assets/img/dish-item-03.jpg" alt="meal-3" />
+          <div class="meals-text">
+            <h3>Tenu roast source</h3>
+            <p>Tuna / Potatoes / Rice</p>
+          </div>
+          <p>$15</p>
+        </div>
+
+        <div class="meals">
+          <img src="./assets/img/dish-item-04.jpg" alt="meal-4" />
+          <div class="meals-text">
+            <h3>Roast Pork (4 sticks)</h3>
+            <p>Pork / Veggies / Shoyu</p>
+          </div>
+          <p>$18</p>
+        </div>
+
+        <div class="meals">
+          <img src="./assets/img/dish-item-05.jpg" alt="meal-5" />
+          <div class="meals-text">
+            <h3>Salted fried chicken</h3>
+            <p>Chicken / Olive Oil / Salt</p>
+          </div>
+          <p>$20</p>
+        </div>
+
+        <div class="meals">
+          <img src="./assets/img/dish-item-06.jpg" alt="meal-6" />
+          <div class="meals-text">
+            <h3>Crab with curry sources</h3>
+            <p>Crab / Potatoes / Rice</p>
+          </div>
+          <p>$14</p>
+        </div>
+
+        <div class="meals">
+          <img src="./assets/img/dish-item-07.jpg" alt="meal-7" />
+          <div class="meals-text">
+            <h3>Imported slamon steak</h3>
+            <p>Salmon / Veggies / Oil</p>
+          </div>
+          <p>$16</p>
+        </div>
+
+        <div class="meals">
+          <img src="./assets/img/dish-item-08.jpg" alt="meal-8" />
+          <div class="meals-text">
+            <h3>Baked potato pizza</h3>
+            <p>Potato / Bread / Cheese</p>
+          </div>
+          <p>$25</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation">
+      <div class="part-time">
+        <div class="time-container">
+          <h3>Time</h3>
+          <h4>Open</h4>
+          <img src="./assets/img/ic-plate.png" alt="icone-plate" />
+          <h5>monday - friday</h5>
+          <p>7AM - 11AM (Breakfast)</p>
+          <p>11AM - 10PM (Lunch/Dinner)</p>
+          <h5>saturday / sunday</h5>
+          <p>8AM - 1PM (Brunch)</p>
+          <p>1PM - 9PM (Lunch/Dinner)</p>
+          <h5>+15 890 979 25 52</h5>
+        </div>
+      </div>
+      <div class="part-reservation">
+        <div class="reservation-container">
+          <h2>Reservation</h2>
+          <h3>Online booking</h3>
+          <img src="./assets/img/ic-plate.png" alt="icone-plate" />
+          <div class="form-input">
+            <select id="people">
+              <option selected="selected" value="People">People</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select>
+            <input
+              type="date"
+              id="booking-date"
+              name="booking-date"
+              value="2020-07-15"
+              min="2020-07-15"
+              max="2021-12-31"
+            />
+            <input
+              type="time"
+              name="booking-time"
+              id="booking-time"
+              min="07:00"
+              max="22:00"
+            />
+            <input type="text" name="name" id="name" placeholder="Name" />
+            <input type="text" name="phone" id="phone" placeholder="Phone" />
+            <input type="email" name="email" id="email" placeholder="Email" />
+          </div>
+          <button>book now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="event">
+      <h2>Upcoming</h2>
+      <h4>Our event</h4>
+      <img src="./assets/img/ic-plate.png" alt="icone-plate" />
+      <div class="event-container">
+        <div class="event-left1">
+          <div class="date">
+            <div>
+              <h6>08</h6>
+              <span>July</span>
+            </div>
+          </div>
+          <div class="address">
+            <h3>Night Inspirescu Party</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>Restaurant Resto<i
+                class="far fa-clock"
+              ></i
+              >10:00pm - 6:00am
+            </p>
+            <h5>Buy tickets</h5>
+          </div>
+        </div>
+
+        <div class="event-left2">
+          <div class="date">
+            <div>
+              <h6>08</h6>
+              <span>July</span>
+            </div>
+          </div>
+          <div class="address">
+            <h3>DJ RobagRuhme</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>Restaurant Resto<i
+                class="far fa-clock"
+              ></i
+              >10:00pm - 6:00am
+            </p>
+            <h5>Buy tickets</h5>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <div class="event-right-container">
+            <div class="date">
+              <div>
+                <h6>08</h6>
+                <span>July</span>
+              </div>
+            </div>
+            <h3>Thousands celebrities at Johnnie Night</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>Restaurant Resto<i
+                class="far fa-clock"
+              ></i
+              >10:00pm - 6:00am
+            </p>
+            <h5>Buy tickets</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ceo">
+      <div class="ceo-container">
+        <div class="text-container">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            corrupti nemo expedita, quis tempora consequatur voluptatum.
+            Nesciunt atque laboriosam maxime dignissimos suscipit repellat
+            pariatur perspiciatis eaque ex ipsam temporibus beatae, esse
+            voluptatibus sapiente error quia totam. Laboriosam debitis rerum
+            fugiat.
+          </p>
+        </div>
+        <h2>Russel Stephens</h2>
+        <p>CEO - HeadPassion</p>
+      </div>
+    </section>
 
     <footer>
-      <form action="#">
-        <label for="name">Name</label>
-        <input type="text" id="name" />
-        <label for="email">Email</label>
-        <input type="text" id="email" />
-        <label for="message">Message</label>
-        <textarea id="message"></textarea>
-        <div class="submit-container">
-          <input class="btn" type="submit" value="Send Message" />
+      <div class="footer-container">
+        <div class="left-footer">
+          <h2>Resto</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit
+            quos explicabo veniam error obcaecati! Amet dignissimos quod dolorem
+            aspernatur? Fugiat quam ex illum optio.
+          </p>
         </div>
-      </form>
-      <div class="infos-contact">
-        <div>
-          <h3>address</h3>
-          <p><br />1234 Somewhere Road #87257 <br />Nashville, TN 00000-0000</p>
-        </div>
-        <div>
-          <h3>phone</h3>
-          <p>(000) 000-0000</p>
-        </div>
-        <div>
-          <h3>email</h3>
-          <p>info@untitled.ltd</p>
-        </div>
-        <div class="social">
-          <h3>social</h3>
-          <ul>
-            <li><i class="fa-brands fa-x-twitter"></i></li>
-            <li><i class="fa-brands fa-facebook-f"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-github"></i></li>
-          </ul>
+        <div class="right-footer">
+          <div class="newsletter">
+            <h3>Newsletter</h3>
+            <input type="email" placeholder="Your email address" />
+          </div>
+          <div class="follow">
+            <h3>Follow us :</h3>
+            <ul>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-pinterest"></i>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
