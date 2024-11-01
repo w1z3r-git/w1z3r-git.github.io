@@ -745,6 +745,20 @@ header .header-text p {
     display: block;
   }
 }
+.menu .menu-container .animLeft {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.menu .menu-container .animRight {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
 .menu .menu-container .meals {
   display: grid;
   grid-template-columns: 25% 60% 15%;

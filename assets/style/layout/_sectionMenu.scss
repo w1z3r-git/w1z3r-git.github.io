@@ -69,6 +69,16 @@
     @media screen and (max-width: 885px){
       display: block;
     }
+    .animLeft{
+      transform: translateX(-50px);
+      opacity: 0;
+      transition: .5s ease;
+    }
+    .animRight{
+      transform: translateX(50px);
+      opacity: 0;
+      transition: .5s ease;
+    }
     .meals{
       display: grid;
       grid-template-columns: 25% 60% 15%;
